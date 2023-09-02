@@ -23,27 +23,41 @@ main {
   width: 100%;
   /* display: flex; */
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 .slides {
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  /* --- */
+  padding: 20vh 0;
+}
+.slides > p {
+  font-size: 15vmin;
+  mix-blend-mode: overlay;
 }
 aside {
   display: flex;
   flex-direction: column;
   position: absolute;
-  z-index: 10;
+  /* z-index: 10; */
   gap: 10px;
-  top: 0;
-  right: 5px;
-  background-color: brown;
+  top: 45%;
+  right: 1%;
+  /* background-color: brown; */
 }
 aside button {
-  height: 50px;
-  width: 50px;
-  border-radius: 20px;
+  border: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 12px;
+  opacity: 0.5;
+  background-color: black;
+}
+
+aside button:is(:active, :focus) {
+  opacity: 1;
 }
 /* .App {
   text-align: center;
