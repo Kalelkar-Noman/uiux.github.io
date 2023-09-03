@@ -5,23 +5,32 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* Header */
 header {
   height: 7vh;
   background-color: aqua;
 }
+/* End Header */
+/* Main */
 main {
   height: 100%;
   width: 100%;
-  position: relative;
+  /* position: relative; */
 }
+/* End Main */
+/* Page1 */
 .page-1 {
+  display: flex;
   height: 93vh;
-  width: 100vw;
+  position: relative;
+  /* width: 100vw; */
+  width: 100%;
 }
-.container {
+.page-1 .container {
   height: 100%;
   width: 100%;
-  /* display: flex; */
+
+  /* d  isplay: flex; */
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -34,14 +43,15 @@ main {
   padding: 20vh 0;
 }
 .slides > p {
-  font-size: 15vmin;
+  font-size: 12vmin;
   mix-blend-mode: overlay;
 }
 aside {
+  /* float: left; */
   display: flex;
   flex-direction: column;
   position: absolute;
-  /* z-index: 10; */
+  z-index: 10;
   gap: 10px;
   top: 45%;
   right: 1%;
@@ -56,44 +66,132 @@ aside button {
   background-color: black;
 }
 
-aside button:is(:active, :focus) {
+aside button:focus {
   opacity: 1;
 }
-/* .App {
-  text-align: center;
-} */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) { */
-/* .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  } */
-/* } */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*End  Page1 */
+/* Page2 */
+.page-2 {
+  /* background-color: brown; */
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
+  align-items: center;
+}
+.page-2 .container {
+  width: 92vw;
+}
+.page-2 .card-container {
+  display: flex;
+  gap: 1%;
+}
+.page-2 img {
+  width: 30vw; /*100%*/
+  /* object-fit: fill; */
+  height: 70vh; /*60*/
+  vertical-align: bottom;
+  /* object-fit: cover; */
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 6px;
+  /* width: 30vw; */
+}
+.page-2 .img,
+.up-img,
+.down-img {
+  position: relative;
+}
+.img > button,
+.up-img > button,
+.down-img > button {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  padding: 1vh 1vw;
+  color: blueviolet;
+  border: none;
+  border-radius: 1vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-2 .text-bottom,
+.text-bottom-mid {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  right: 1%;
+  color: blanchedalmond;
+}
+.page-2 .mid {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.mid img {
+  height: 34.6vh; /*30*/
+  /* width: 100%; */
+  width: 30vw;
+}
+/* .page-2 h1 {
+  font-weight: 600;
+  font-size: 3vw;
 } */
+.text-align-center {
+  text-align: center;
+  /* line-height: 2; */
+  margin: 1% 0;
+}
+/* End Page2 */
+/* Page3 */
+.page-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  /* background-color: blueviolet; */
+}
+.page3-container section {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+}
+.page3-container .left,
+.page3-container .right {
+  width: 50%;
+}
+.img-travel img {
+  width: 100%;
+  vertical-align: bottom;
+  object-fit: contain;
+}
+/* -- */
+.vmin3 {
+  font-size: 3vmin;
+}
+.vmin6 {
+  font-size: 6vmin;
+}
+/* -- */
+.page3-container .right {
+  padding: 3vw 0 3vw 3vw;
+}
+.points {
+  display: flex;
+  align-items: center;
+  column-gap: 2vw;
+}
+.point-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  gap: 3vh;
+}
+.points-image {
+  height: 6vmin;
+  border: none;
+}
+.points-image img {
+  height: 100%;
+}
+/* End Page3 */
