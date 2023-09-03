@@ -4,7 +4,8 @@ export default function Header() {
   return (
     <>
       <header>
-        <h2>Temporary</h2>
+      {/* Temporary  */}
+        <h2><span>Work is in Progress it is a Devlopement Build</span></h2> 
       </header>
     </>
   );
