@@ -12,6 +12,7 @@ header {
 }
 /* End Header */
 /* Main */
+
 main {
   height: 100%;
   width: 100%;
@@ -40,8 +41,11 @@ main {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  /* --- */
-  padding: 20vh 0;
+  /* padding: 20vh 0; */
+  display: flex;
+  justify-content: flex-start;
+  background-position: center;
+  align-items: center;
 }
 .slides > p {
   font-size: 12vmin;
@@ -58,16 +62,16 @@ aside {
   right: 1%;
   /* background-color: brown; */
 }
-aside button {
+aside div {
   border: 0;
-  height: 16px;
-  width: 16px;
-  border-radius: 12px;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
   opacity: 0.5;
   background-color: black;
 }
 
-aside button:focus {
+aside .image-btn {
   opacity: 1;
 }
 /*End  Page1 */
@@ -75,10 +79,10 @@ aside button:focus {
 .page-2 {
   /* background-color: brown; */
   /* height: 100vh; */
-  padding: 5.7vh 3.3vw;
+  padding: 5.7vh 0; /*-3.3*/
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .page-2 .container {
@@ -148,9 +152,9 @@ aside button:focus {
 .page-3 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   /* height: 100vh; */
-  padding: 11.5vh 4.2vw;
+  padding: 11.5vh 0; /*-4.2vw*/
   width: 100%;
   /* background-color: blueviolet; */
 }
@@ -204,12 +208,12 @@ aside button:focus {
   width: 100%; */
   /* background-color: blueviolet; */
   /* padding: 3vh 3vw; */
-  padding: 8.2vh 11vw;
+  padding: 8.2vh 0; /*8.2vh 11vw*/
 }
 .page4-container {
   display: flex;
   gap: 2vw;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .destinations {
   width: 24vw;
@@ -279,8 +283,12 @@ aside button:focus {
 /* width: 100%; */
 /* background-color: burlywood; */
 /* } */
+.page-6 {
+  display: flex;
+  justify-content: space-evenly;
+}
 .page6-container {
-  padding: 2.3vh 3.9vw; /*0.8vh 4.2*/
+  padding: 2.3vh 0; /*0.8vh 4.2*/
 }
 .page6-headline {
   display: flex;
@@ -301,7 +309,7 @@ aside button:focus {
   display: flex;
   /* height: 90vh; */
   height: 80vh;
-  width: 90vw;
+  /* width: 90vw; */
   gap: 1vw;
   /* background-color: black; */
 }
@@ -347,3 +355,65 @@ aside button:focus {
   width: 100%;
 } */
 /* End Page6 */
+/* Page7 */
+.page-7 {
+  /* height: 100vh; */
+  width: 100%;
+  /* background-color: blanchedalmond; */
+  display: flex;
+  justify-content: space-around;
+  padding: 10vh 0;
+}
+.page-7 h1 {
+  padding-right: 16%;
+}
+.page-7 .left,
+.page-7 .right {
+  width: 45%;
+  height: 44vh;
+  /* background-color: aqua; */
+}
+.page-7 .left {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+}
+.page-7 .right {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  position: relative;
+  gap: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 6px;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
+.customer-card {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  /* padding: 5vh 5vw; */
+  padding: 8%;
+  background-color: red;
+  position: sticky;
+  top: 0;
+  background-color: azure;
+}
+.customer-img img {
+  height: 10vmin;
+  width: 10vmin;
+  object-fit: cover;
+  border-radius: 5vmin;
+}
+/* .customer-text{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 6px;
+} */
+.customer-text p {
+  margin-bottom: 2vh;
+}
+/* End Page7 */
