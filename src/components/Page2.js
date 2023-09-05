@@ -25,26 +25,30 @@ export default function Page2() {
             </div>
             <div className="cards mid">
               <div className="up-img">
-                <button>3 Packages</button>
-                <img
-                  src="https://i.pinimg.com/236x/a0/33/a6/a033a6d215cfdc41dbfd92c5ac5dc8cf.jpg"
-                  alt="paris"
-                />
-                <section className="text-bottom-mid">
-                  <h3>Paris</h3>
-                  <p className="prices-start-text">Starting Frome $1200</p>
-                </section>
+                <div>
+                  <button>3 Packages</button>
+                  <img
+                    src="https://i.pinimg.com/236x/a0/33/a6/a033a6d215cfdc41dbfd92c5ac5dc8cf.jpg"
+                    alt="paris"
+                  />
+                  <section className="text-bottom-mid">
+                    <h3>Paris</h3>
+                    <p className="prices-start-text">Starting Frome $1200</p>
+                  </section>
+                </div>
               </div>
               <div className="down-img">
-                <button>3 Packages</button>
-                <img
-                  src="https://i.pinimg.com/236x/9b/2a/87/9b2a87d0053961fe064b4dedcbf92d5a.jpg"
-                  alt="paris"
-                />
-                <section className="text-bottom-mid">
-                  <h3>Paris</h3>
-                  <p className="prices-start-text">Starting Frome $1200</p>
-                </section>
+                <div>
+                  <button>3 Packages</button>
+                  <img
+                    src="https://i.pinimg.com/236x/9b/2a/87/9b2a87d0053961fe064b4dedcbf92d5a.jpg"
+                    alt="paris"
+                  />
+                  <section className="text-bottom-mid">
+                    <h3>Paris</h3>
+                    <p className="prices-start-text">Starting Frome $1200</p>
+                  </section>
+                </div>
               </div>
             </div>
             <div className="cards">

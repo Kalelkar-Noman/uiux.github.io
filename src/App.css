@@ -7,8 +7,12 @@
 }
 /* Header */
 header {
-  height: 7vh;
+  /* height: 7vh; */
+  height: 6vh;
+  display: flex;
+  padding: 0 2vw;
   background-color: aqua;
+  align-items: center;
 }
 /* End Header */
 /* Main */
@@ -22,7 +26,7 @@ main {
 /* Page1 */
 .page-1 {
   display: flex;
-  height: 93vh;
+  height: 94vh;
   position: relative;
   /* width: 100vw; */
   width: 100%;
@@ -70,7 +74,16 @@ aside div {
   opacity: 0.5;
   background-color: black;
 }
-
+.page-2 .cards,
+.up-img,
+.down-img {
+  display: flex;
+  justify-content: center;
+}
+.up-img,
+.down-img {
+  position: relative;
+}
 aside .image-btn {
   opacity: 1;
 }
@@ -90,7 +103,8 @@ aside .image-btn {
 }
 .page-2 .card-container {
   display: flex;
-  gap: 1%;
+  /* gap: 1%; */
+  justify-content: space-between;
 }
 .page-2 img {
   width: 30vw; /*100%*/
@@ -104,13 +118,13 @@ aside .image-btn {
   /* width: 30vw; */
 }
 .page-2 .img,
-.up-img,
-.down-img {
+.up-img > div,
+.down-img > div {
   position: relative;
 }
 .img > button,
-.up-img > button,
-.down-img > button {
+.up-img button,
+.down-img button {
   position: absolute;
   top: 2%;
   right: 2%;
@@ -287,8 +301,17 @@ aside .image-btn {
   display: flex;
   justify-content: space-evenly;
 }
+/* .page6-container { */
+/*padding: 2.3vh 0;*/ /*0.8vh 4.2*/
+/* } */
 .page6-container {
-  padding: 2.3vh 0; /*0.8vh 4.2*/
+  padding: 2.3vh 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .page6-headline {
   display: flex;
@@ -417,3 +440,91 @@ aside .image-btn {
   margin-bottom: 2vh;
 }
 /* End Page7 */
+/* responsive web */
+@media (max-width: 767px) {
+  .page-2 {
+    padding: 3vh 0;
+  }
+  .page-2 .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-2 .cards {
+    flex-grow: 1;
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
+  /* .page-2 .cards .img,
+  .page-2 .cards .up-img,
+  .page-2 .cards .down-img {
+    display: flex;
+    justify-content: center;
+  } */
+  .page-2 .cards img {
+    /* width: auto;
+    height: 100%; */
+    width: 100%;
+  }
+  .page-2 .card-container {
+    flex-wrap: wrap;
+    gap: 2vh;
+  }
+  /* Page3 */
+  .page-3 {
+    padding: 3vh 0;
+  }
+  .page3-container section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page3-container .left,
+  .page3-container .right {
+    width: 100%;
+  }
+  /* page4 */
+  .page-4 {
+    padding: 0;
+  }
+  .page4-container {
+    flex-wrap: wrap;
+  }
+  .destinations {
+    width: auto;
+  }
+  /* page5 */
+  .choices-container {
+    /* display: flex; */
+    justify-content: center;
+    /* gap: 1.5vw; */
+    /* padding: 0 1.5vw; */
+    flex-wrap: wrap;
+  }
+  .choices-container section {
+    padding: 4vh 2vw;
+  }
+  /* page7 */
+  .page-7 {
+    flex-wrap: wrap;
+    padding: 2vh 0;
+  }
+  .page-7 .left {
+    width: 100%;
+    height: max-content;
+    padding: 2vh 2vw;
+    align-items: center;
+  }
+  .page-7 h1 {
+    padding-right: 0;
+  }
+  .page-7 .right {
+    width: 90%;
+    height: 270px;
+    /* padding: 2vh 2vw; */
+  }
+ 
+  /* .page-7 .right {
+    width: 90%;
+    height: 34vmax;
+    padding: 2vh 2vw;
+  } */
+}

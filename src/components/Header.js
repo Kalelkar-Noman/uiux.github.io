@@ -6,7 +6,8 @@ export default function Header() {
       <header>
         {/* Temporary  */}
         <h2>
-          <span>Work is in Progress it is a Devlopement Build</span>
+          {/* <span>Work is in Progress it is a Devlopement Build</span> */}
+          A.N.
         </h2>
       </header>
     </>
