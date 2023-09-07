@@ -13,6 +13,13 @@ header {
   padding: 0 2vw;
   background-color: aqua;
   align-items: center;
+  overflow: hidden;
+}
+header img {
+  width: 16vmin;
+  min-width: 90px;
+  mix-blend-mode: multiply;
+  object-fit: contain;
 }
 /* End Header */
 /* Main */
@@ -227,17 +234,45 @@ aside .image-btn {
 .page4-container {
   display: flex;
   gap: 2vw;
-  justify-content: space-evenly;
+  height: 70vh;
+  padding: 0 2vw;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  /* overflow-x: scroll; */
+  overflow: hidden;
+  scroll-behavior: smooth;
+  /* position: relative; */
+}
+.page4-container button {
+  position: absolute;
+  border: none;
+  padding: 2vmin;
+  font-size: 20px;
+  font-weight: bolder;
+  z-index: 5;
+}
+.left-arrow,
+.right-arrow {
+  background-color: gray;
+  border-radius: 10px;
+}
+.left-arrow {
+  left: 2vw;
+}
+.right-arrow {
+  right: 2vw;
 }
 .destinations {
   width: 24vw;
+  height: fit-content;
   background-color: azure;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 6px;
 }
 .dest-text {
-  height: 10vh;
+  /* height: 10vh; */
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 1vmin;
@@ -246,14 +281,14 @@ aside .image-btn {
   height: 55vh;
   width: 100%;
   object-fit: cover;
-  /* vertical-align: bottom; */
+  vertical-align: bottom;
   /* width: 100%; */
-  /* object-fit: contain; */
+  object-fit: fill;
 }
 .dest-text .head-line {
   display: flex;
   justify-content: space-between;
-  padding: 0 4%;
+  padding: 0 4% 2% 4%;
 }
 /* End Page4 */
 /* Page5 */
@@ -262,6 +297,9 @@ aside .image-btn {
   /* width: 100%; */
   padding: 6vh 0;
   /* background-color: aqua; */
+}
+.icon img {
+  width: 20vmin;
 }
 .choices-container .icon {
   display: flex;
@@ -404,6 +442,7 @@ aside .image-btn {
 .page-7 .right {
   display: flex;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   flex-direction: column;
   position: relative;
   gap: 2%;
@@ -440,6 +479,48 @@ aside .image-btn {
   margin-bottom: 2vh;
 }
 /* End Page7 */
+/* Page8 */
+.page8 {
+  /* height: 100vh; */
+  width: 100%;
+  background-color: aqua;
+}
+.page8-headings {
+  text-align: center;
+}
+.page8-slides {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+  padding: 0 1vw;
+}
+.page8-slides img {
+  /* width: 100%; */
+  width: 29vw;
+  border-radius: 15px;
+}
+.page8-slides .left,
+.page8-slides .right {
+  display: flex;
+  margin-bottom: 2vh;
+}
+.page8 .container,
+.page8-headings {
+  padding: 2vh 2vw;
+}
+.page8-slides .mid-info {
+  display: flex;
+  padding: 0 1vw;
+  flex-direction: column;
+  row-gap: 0.4vh;
+}
+.mid-info small {
+  width: max-content;
+  padding: 0.2vh 0.4vw;
+  background: orange;
+}
+/* End page8 */
 /* responsive web */
 @media (max-width: 767px) {
   .page-2 {
@@ -463,7 +544,9 @@ aside .image-btn {
   .page-2 .cards img {
     /* width: auto;
     height: 100%; */
-    width: 100%;
+    /* width: 100%; */
+    width: 90vmin;
+    object-fit: fill;
   }
   .page-2 .card-container {
     flex-wrap: wrap;
@@ -484,12 +567,27 @@ aside .image-btn {
   /* page4 */
   .page-4 {
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
   .page4-container {
-    flex-wrap: wrap;
+    overflow-x: scroll;
   }
+  .center-destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 100%;
+  }
+  /* .page4-container {
+    gap: 6vw; */
+  /* padding: 0 6vw; */
+  /* } */
   .destinations {
-    width: auto;
+    /* width: auto; */
+    /* min-width: 45vmin; */
+    min-width: 50%;
   }
   /* page5 */
   .choices-container {
@@ -521,10 +619,42 @@ aside .image-btn {
     height: 270px;
     /* padding: 2vh 2vw; */
   }
- 
+  .vmin3 {
+    font-size: 4vmin;
+  }
+  .dest-img img {
+    /* width: 90vmin; */
+    /* width: 45vmin; */
+    object-fit: fill;
+  }
   /* .page-7 .right {
     width: 90%;
     height: 34vmax;
     padding: 2vh 2vw;
   } */
+  /* Page8 */
+  .page8-slides .left,
+  .page8-slides .right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .page8-slides img {
+    /* width: 100%; */
+    width: 100%;
+  }
+  /* End page8 */
+}
+@media (max-width: 1045px) {
+  .page8-slides {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .destinations {
+    /* width: auto; */
+    /* min-width: 45vmin; */
+    min-width: 80%;
+  }
 }

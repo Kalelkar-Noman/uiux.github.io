@@ -1,4 +1,8 @@
 import React from "react";
+import save from "./resources/save.png";
+import book from "./resources/book.png";
+import guide from "./resources/guide.png";
+import world from "./resources/world.jpg";
 
 export default function Page5() {
   return (
@@ -12,7 +16,8 @@ export default function Page5() {
           <div className="choices-container">
             <section>
               <div className="icon">
-                <svg
+                <img src={save} alt="savings" />
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -30,7 +35,7 @@ export default function Page5() {
                     d="M4,8c0,0,9,0,13,0s6,0,6,2c0,3,0,28,0,28c0-2-4-2-6-2c-4,0-13,0-13,0C4,32,4,8,4,8z M44,36c0,0-8,0-12,0 c-2,0-7,0-7,2c0-26,0-24.7,0-28c0-2,3-2,7-2s12,0,12,0S44,32,44,36z"
                   ></path>
                   <path fill="#bcaaa4" d="M23,10h2v28h-2V10z"></path>
-                </svg>
+                </svg> */}
               </div>
               <div className="p5-text-area">
                 <h3>Competitive Pricing</h3>
@@ -39,7 +44,8 @@ export default function Page5() {
             </section>
             <section>
               <div className="icon">
-                <svg
+                <img src={world} alt="world coverage" />
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -57,7 +63,7 @@ export default function Page5() {
                     d="M4,8c0,0,9,0,13,0s6,0,6,2c0,3,0,28,0,28c0-2-4-2-6-2c-4,0-13,0-13,0C4,32,4,8,4,8z M44,36c0,0-8,0-12,0 c-2,0-7,0-7,2c0-26,0-24.7,0-28c0-2,3-2,7-2s12,0,12,0S44,32,44,36z"
                   ></path>
                   <path fill="#bcaaa4" d="M23,10h2v28h-2V10z"></path>
-                </svg>
+                </svg> */}
               </div>
               <div className="p5-text-area">
                 <h3>Worldwide Coverage</h3>
@@ -66,7 +72,8 @@ export default function Page5() {
             </section>
             <section>
               <div className="icon">
-                <svg
+                <img src={book} alt="fast booking" />
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -84,7 +91,7 @@ export default function Page5() {
                     d="M4,8c0,0,9,0,13,0s6,0,6,2c0,3,0,28,0,28c0-2-4-2-6-2c-4,0-13,0-13,0C4,32,4,8,4,8z M44,36c0,0-8,0-12,0 c-2,0-7,0-7,2c0-26,0-24.7,0-28c0-2,3-2,7-2s12,0,12,0S44,32,44,36z"
                   ></path>
                   <path fill="#bcaaa4" d="M23,10h2v28h-2V10z"></path>
-                </svg>
+                </svg> */}
               </div>
               <div className="p5-text-area">
                 <h3>Fast Booking</h3>
@@ -93,7 +100,8 @@ export default function Page5() {
             </section>
             <section>
               <div className="icon">
-                <svg
+                <img src={guide} alt="guided" />
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -111,7 +119,7 @@ export default function Page5() {
                     d="M4,8c0,0,9,0,13,0s6,0,6,2c0,3,0,28,0,28c0-2-4-2-6-2c-4,0-13,0-13,0C4,32,4,8,4,8z M44,36c0,0-8,0-12,0 c-2,0-7,0-7,2c0-26,0-24.7,0-28c0-2,3-2,7-2s12,0,12,0S44,32,44,36z"
                   ></path>
                   <path fill="#bcaaa4" d="M23,10h2v28h-2V10z"></path>
-                </svg>
+                </svg> */}
               </div>
               <div className="p5-text-area">
                 <h3>Guided Tours</h3>
