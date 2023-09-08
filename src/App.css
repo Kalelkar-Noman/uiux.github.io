@@ -575,7 +575,7 @@ aside .image-btn {
   text-decoration: none;
 }
 .FooterLink:hover {
-  color: green;
+  color: rgb(0, 72, 114);
   transition: 200ms ease-in;
 }
 .Headings {
