@@ -62,7 +62,8 @@ main {
 }
 .slides > p {
   font-size: 12vmin;
-  mix-blend-mode: overlay;
+    /* mix-blend-mode: overlay; */
+    color: antiquewhite;
 }
 aside {
   /* float: left; */
