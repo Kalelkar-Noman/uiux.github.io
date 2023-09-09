@@ -29,7 +29,7 @@ export default function Page1() {
            <p>it's A Big World <br> Out There,Go <br> Explore</p>
           </div>
           <div style={{ backgroundImage: `url(${c})` }} className="slides">
-            <p> Maharashtra</p>
+           <p> it's A Big World <br> Out There World <br> Explore</p>
           </div>
           <aside>
             <div
