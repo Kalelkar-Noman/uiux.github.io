@@ -63,12 +63,13 @@ main {
 .slides > p {
   font-size: 12vmin;
     /* mix-blend-mode: overlay; */
-    color: antiquewhite;
-  font-family: 'Poppins';
+    color: whitesmoke;
+    font-family: emoji;
     font-weight: 400;
-    font-size: 11vmin;
+    font-size: 10vmin;
     width: 100vw;
     text-align: center;
+    height: 37vh;
 }
 aside {
   /* float: left; */
