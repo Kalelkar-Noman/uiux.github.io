@@ -18,7 +18,7 @@ export default function Page1() {
       <div className="page-1">
         <div ref={containerRef} id="container" className="container">
           <div style={{ backgroundImage: `url(${a})` }} className="slides">
-            <p> Maharashtra</p>
+            <p> it's A Big World <br> Out There World <br> Explore</p>
           </div>
           <div
             style={{
