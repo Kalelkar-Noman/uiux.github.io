@@ -16,12 +16,7 @@ export default function Page4() {
     let boxwidth = box.clientWidth;
     box.scrollLeft = box.scrollLeft + boxwidth;
   };
-  // const pv = () => {
-  //   prev();
-  // };
-  // const nx = () => {
-  //   next();
-  // };
+
   return (
     <>
       <div className="page-4">

@@ -10,7 +10,6 @@ export default function Page8() {
             <h1>Travel Tips and Advice</h1>
           </div>
           <div className="page8-slides">
-            {/* <div className="p8-slide"> */}
             <div className="left">
               <div className="p8-img">
                 <img
@@ -43,7 +42,6 @@ export default function Page8() {
                 </p>
               </div>
             </div>
-            {/* </div> */}
           </div>
         </div>
       </div>

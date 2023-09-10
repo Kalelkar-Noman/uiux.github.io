@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
 import Header from "./components/Header";
-import "./App.css";
+import "./App2.css";
 import Main from "./components/Main";
 
 function App() {
