@@ -5,14 +5,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  background-color: whitesmoke;
+}
 /* Header */
 header {
   /* height: 7vh; */
   height: 6vh;
   display: flex;
   padding: 0 2vw;
-  background-color: aqua;
+  /* background-color: aqua; */
   align-items: center;
   overflow: hidden;
 }
@@ -62,14 +64,14 @@ main {
 }
 .slides > p {
   font-size: 12vmin;
-    /* mix-blend-mode: overlay; */
-    color: whitesmoke;
-    font-family: emoji;
-    font-weight: 400;
-    font-size: 10vmin;
-    width: 100vw;
-    text-align: center;
-    height: 37vh;
+  /* mix-blend-mode: overlay; */
+  color: whitesmoke;
+  font-family: emoji;
+  font-weight: 400;
+  font-size: 10vmin;
+  width: 100vw;
+  text-align: center;
+  height: 37vh;
 }
 aside {
   /* float: left; */
@@ -201,6 +203,7 @@ aside .image-btn {
   width: 100%;
   vertical-align: bottom;
   object-fit: contain;
+  mix-blend-mode: multiply;
 }
 /* -- */
 .vmin3 {
@@ -230,6 +233,7 @@ aside .image-btn {
 }
 .points-image img {
   height: 100%;
+  border-radius: 5px;
 }
 /* End Page3 */
 /* Page4 */
@@ -250,6 +254,7 @@ aside .image-btn {
   /* overflow-x: scroll; */
   overflow: hidden;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   /* position: relative; */
 }
 .page4-container button {
@@ -308,7 +313,7 @@ aside .image-btn {
   /* background-color: aqua; */
 }
 .icon img {
-  width: 20vmin;
+  width: 15vmin;
 }
 .choices-container .icon {
   display: flex;
@@ -659,6 +664,7 @@ aside .image-btn {
     align-items: center;
     height: 100%;
     min-width: 100%;
+    scroll-snap-align: center;
   }
   /* .page4-container {
     gap: 6vw; */

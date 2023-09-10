@@ -1,4 +1,7 @@
 import React from "react";
+import loc from "./resources/loc.jpeg";
+import bag from "./resources/bag.jpeg";
+import pay from "./resources/pay.jpeg";
 
 export default function Page3() {
   return (
@@ -22,10 +25,7 @@ export default function Page3() {
               <div className="point-container">
                 <div className="points">
                   <button className="points-image">
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/128/685/685661.png"
-                      alt="icon"
-                    />
+                    <img src={loc} alt="icon" />
                   </button>
                   <div>
                     <h3>Choose Destination</h3>
@@ -33,10 +33,7 @@ export default function Page3() {
                 </div>
                 <div className="points">
                   <button className="points-image">
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/128/685/685661.png"
-                      alt="icon"
-                    />
+                    <img src={pay} alt="icon" />
                   </button>
                   <div>
                     <h3>Make Payment</h3>
@@ -44,10 +41,7 @@ export default function Page3() {
                 </div>
                 <div className="points">
                   <button className="points-image">
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/128/685/685661.png"
-                      alt="icon"
-                    />
+                    <img src={bag} alt="icon" />
                   </button>
                   <div>
                     <h3>Reach Airports on Selected Date</h3>
