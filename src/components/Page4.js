@@ -35,6 +35,7 @@ export default function Page4() {
             <div className="destinations">
               <div className="dest-img">
                 <img
+                  loading="lazy"
                   src="https://images.unsplash.com/photo-1693116379354-46cc79d728e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
                   alt="places"
                 />
@@ -53,6 +54,7 @@ export default function Page4() {
             <div className="destinations">
               <div className="dest-img">
                 <img
+                  loading="lazy"
                   src="https://images.unsplash.com/photo-1694190941111-90065ded19d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
                   alt="places"
                 />
@@ -71,6 +73,7 @@ export default function Page4() {
             <div className="destinations">
               <div className="dest-img">
                 <img
+                  loading="lazy"
                   src="https://images.unsplash.com/photo-1694259841577-caa97cde9518?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1392&q=80"
                   alt="places"
                 />
@@ -89,6 +92,7 @@ export default function Page4() {
             <div className="destinations">
               <div className="dest-img">
                 <img
+                  loading="lazy"
                   src="https://images.unsplash.com/photo-1693116379354-46cc79d728e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
                   alt="places"
                 />

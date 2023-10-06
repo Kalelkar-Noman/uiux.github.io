@@ -12,6 +12,7 @@ export default function Page7() {
           <div className="customer-card z-1">
             <div className="customer-img">
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1687441266692-de2df8197665?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1564&q=80"
                 alt="profile"
               />
@@ -29,6 +30,7 @@ export default function Page7() {
           <div className="customer-card z-2">
             <div className="customer-img">
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1687441266692-de2df8197665?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1564&q=80"
                 alt="profile"
               />
@@ -46,6 +48,7 @@ export default function Page7() {
           <div className="customer-card z-3">
             <div className="customer-img">
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1687441266692-de2df8197665?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1564&q=80"
                 alt="profile"
               />

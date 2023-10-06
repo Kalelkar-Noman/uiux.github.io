@@ -12,6 +12,7 @@ export default function Page3() {
             <div className="left">
               <div className="img-travel">
                 <img
+                  loading="lazy"
                   src="https://img.freepik.com/free-vector/landscape-man-canoe-river_24877-76260.jpg?w=740&t=st=1693737239~exp=1693737839~hmac=20cddba6390ef041f69d382fb4937012cf1fac3402ae85cb26361d484e7a1888"
                   alt="travel"
                 />

@@ -13,6 +13,7 @@ export default function Page8() {
             <div className="left">
               <div className="p8-img">
                 <img
+                  loading="lazy"
                   src="https://images.unsplash.com/photo-1693853202947-a4252caf3a3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                   alt="mountain"
                 />
@@ -29,6 +30,7 @@ export default function Page8() {
             <div className="right">
               <div className="p8-img">
                 <img
+                  loading="lazy"
                   src="https://images.unsplash.com/photo-1693853202947-a4252caf3a3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                   alt="mountain"
                 />
